@@ -9,7 +9,7 @@ export default function Home() {
         <Navbar />
         <SearchBar />
       </div>
-      <div className=" w-full px-8 flex justify-center items-center mt-6">
+      <div className=" w-full px-8 flex justify-center items-center mt-6 mb-6">
           <ShowCase />
       </div>
     </main>
