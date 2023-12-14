@@ -26,8 +26,8 @@ const divContent = [
 const ShowCase = () => {
   return (
     <>
-      <section className="  bg-slate-400 flex flex-col relative w-full py-10 rounded gap-y-4 ">
-        <Heading title=" Reasons why you should definetly patener with us"/>
+      <section className="  bg-slate-100 flex flex-col relative w-full py-10 rounded gap-y-4 ">
+        <Heading title=" Some amaizing properties"/>
         <div className=" flex justify-evenly items-center">
         {divContent.map((box) => (
           <div
