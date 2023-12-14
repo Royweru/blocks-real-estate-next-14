@@ -1,3 +1,4 @@
+import { Home } from 'lucide-react'
 import React from 'react'
 import { IconType } from 'react-icons'
 
@@ -14,12 +15,18 @@ const Box:React.FC<BoxProps> = ({
     icon:Icon
 }) => {
   return (
-    <div className='w-full bg-slate-50 p-5 justify-between items-center flex flex-col'>
+    <div className='  h-[250px] border-[2px] border-black p-3 justify-between items-center flex flex-col rounded-lg'>
       <div className=' w-full flex flex-col justify-evenly items-center gap-y-2'>
-        <div className=' flex  justify-between items-center w-full'>
+        <div className=' flex justify-between w-full items-center mb-3'> 
+        <div className=' text-2xl font-bold font-sans text-emerald-600'>
           {title}
         </div>
-        <p className=' text-sm font-semibold font-sans text-neutral-100'>
+        <div>
+            <Home />
+        </div>
+        </div>
+       
+        <p className=' text-sm font-semibold font-sans text-black'>
             {desc}
         </p>
       </div>
