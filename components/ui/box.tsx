@@ -15,7 +15,7 @@ const Box:React.FC<BoxProps> = ({
     icon:Icon
 }) => {
   return (
-    <div className='  h-[250px] border-[2px] border-black p-3 justify-between items-center flex flex-col rounded-lg'>
+    <div className='  h-[250px] col-span-1 border-[2px] border-black p-3 justify-between items-center flex flex-col rounded-lg'>
       <div className=' w-full flex flex-col justify-evenly items-center gap-y-2'>
         <div className=' flex justify-between w-full items-center mb-3'> 
         <div className=' text-2xl font-bold font-sans text-emerald-600'>

@@ -23,7 +23,7 @@ const BoxContent =[
 ]
 const ContentBox = () => {
   return (
-    <div className=' w-full grid grid-cols-3 gap-12 px-5'>
+    <div className=' w-full grid grid-cols-1 md:grid-cols-3 gap-12 px-5'>
          {BoxContent.map(content=>(
             <div key={content.id}>
                 <Box  title={content.title} desc={content.desc} link={content.link} />
