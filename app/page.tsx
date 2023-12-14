@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar/main-navbar";
 import SearchBar from "@/components/search-bar";
 import ShowCase from "@/components/show-case";
 import Heading from "@/components/ui/heading";
+import ContentBox from "@/components/content-box";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-evenly w-full ">
@@ -15,7 +16,7 @@ export default function Home() {
       </div>
       <div className=" bg-white w-full rounded p-5 flex flex-col justify-evenly items-center">
           <Heading title="What are you expecting to do?" subtitle=" get mind blowing deals and crazy offers" />
-          
+          <ContentBox />
       </div>
     </main>
   );
