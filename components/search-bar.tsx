@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const SearchBar = () => {
   return (
-    <input type="text" placeholder="Search for your dream home.." className="input input-bordered input-primary w-full max-w-xs p-6 rounded" />
-  )
-}
+    <div className=" w-full shadow-lg">
+      <input
+        type="text"
+        placeholder="Search for your dream home.."
+        className=" border-[2px] border-black  w-full max-w-xs p-6 rounded"
+      />
+    </div>
+  );
+};
 
-export default SearchBar
+export default SearchBar;
