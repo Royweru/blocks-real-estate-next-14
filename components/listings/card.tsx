@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Heart } from "lucide-react";
 const Card = () => {
   return (
-   <div className=" col-span-1 cursor-pointer group bg-slate-200 rounded-xl">
+   <div className=" col-span-1 cursor-pointer group bg-slate-200  rounded">
        <div className=" flex flex-col gap-y-2">
            <div 
             className="
