@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Heart } from "lucide-react";
+import { Badge } from "../ui/badge";
 const Card = () => {
   return (
    <div className=" col-span-1 cursor-pointer group bg-slate-200  rounded">
@@ -33,9 +34,9 @@ const Card = () => {
               <div className=" font-bold text-sm font-mono">
                   188.99$
               </div>
-              <p className=" font-light text-sm font-mono">
-                 50% off
-              </p>
+              <Badge variant="destructive">
+                50% off
+              </Badge>
            </div>
        </div>
    </div>
