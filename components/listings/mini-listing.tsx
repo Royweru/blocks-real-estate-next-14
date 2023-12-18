@@ -1,5 +1,5 @@
+"use client"
 import React from 'react'
-import { Card } from '../ui/card'
 import ListingCard from '../listing-card'
 
 
@@ -18,8 +18,8 @@ const ListingMap = [
 const MiniListing = () => {
   return (
     <div className=' w-full mt-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4'>
-       {ListingMap.map(listing=>(
-         <ListingCard key={listing.id}/>
+       {ListingMap.map(post=>(
+        <ListingCard key={post.id}/>
        ))}
     </div>
   )
