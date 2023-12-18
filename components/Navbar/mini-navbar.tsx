@@ -20,7 +20,7 @@ const MiniNavbar = () => {
           </li>
           <li className="relative group">
             <a href="#" className="text-white hover:text-gray-300">About</a>
-            <div className="absolute hidden group-hover:block bg-gray-800 text-white py-2 rounded-md shadow-lg">
+            <div className="absolute w-full  hidden group-hover:block bg-gray-800 text-white py-2 rounded-md shadow-lg">
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">Our Story</a>
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">Team</a>
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">Mission</a>
