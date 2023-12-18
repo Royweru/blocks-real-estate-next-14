@@ -6,6 +6,7 @@ import Heading from "@/components/ui/heading";
 import ContentBox from "@/components/content-box";
 import ShowCase from "@/components/show-case";
 import Listings from "@/components/listings";
+import MiniListing from "@/components/listings/mini-listing";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-y-4 justify-evenly items-center w-full ">
@@ -19,7 +20,7 @@ export default function Home() {
       </div>
       <ShowCase />
       <Listings />
-      
+      <MiniListing />
     </main>
   );
 }
