@@ -17,7 +17,7 @@ const ListingMap = [
 ]
 const MiniListing = () => {
   return (
-    <div className=' w-full mt-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4'>
+    <div className='grid w-full mt-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4'>
        {ListingMap.map(post=>(
         <ListingCard key={post.id}/>
        ))}

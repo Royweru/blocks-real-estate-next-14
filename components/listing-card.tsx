@@ -11,9 +11,9 @@ import Image from "next/image";
 
 const ListingCard = () => {
   return (
-    <Card className=" bg-white col-span-1 md:col-span-2">
+    <Card className=" bg-white col-span-1 md:col-span-2 ">
       <CardHeader>
-        <div className=" h-[64px] w-full ">
+        <div className=" w-[350px] h-[350px] ">
           <div className=" relative aspect-square">
             <Image
               src={"/images/bg1.jpeg"}
