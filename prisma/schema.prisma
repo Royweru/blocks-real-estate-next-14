@@ -9,3 +9,13 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+
+model Rental{
+  id String @id @default(uuid())
+  rooms Int
+  location String
+  rentalPrice Decimal
+  purchasePrice Decimal?
+  type String
+}
