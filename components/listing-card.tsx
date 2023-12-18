@@ -13,7 +13,7 @@ const ListingCard = () => {
   return (
     <Card className=" bg-white col-span-1 md:col-span-2 ">
       <CardHeader>
-        <div className=" w-[350px] h-[350px] ">
+        <div className=" w-full h-[400px] ">
           <div className=" relative aspect-square">
             <Image
               src={"/images/bg1.jpeg"}
@@ -24,16 +24,16 @@ const ListingCard = () => {
           </div>
         </div>
         <CardDescription>
-          this is a card and this and that and that when we give you out andd
-          out
+          $5,999,443.3
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <p>
-          This here is the shit and this here ris the shit and shit and shit and
-          shit when we came together of all pple and that when we ocoe toghether
-          who ew arre
-        </p>
+      <CardContent className=" font-bold text-xl gap-y-2">
+       <div>
+        House along th 
+       </div>
+       <div className=" text-xs font-light text-neutral-500">
+        Make sure to check the deal before its tool late
+       </div>
       </CardContent>
     </Card>
   );

@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import ListingCard from '../listing-card'
+import Heading from '../ui/heading'
 
 
 const ListingMap = [
@@ -17,11 +18,15 @@ const ListingMap = [
 ]
 const MiniListing = () => {
   return (
-    <div className='grid w-full mt-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4'>
+    <>
+    <Heading title='Check the properties around Kilimani area lavingtone'/>
+     <div className='grid w-full mt-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 px-3'>
        {ListingMap.map(post=>(
         <ListingCard key={post.id}/>
        ))}
     </div>
+    </>
+   
   )
 }
 
