@@ -1,17 +1,22 @@
 
 import React from 'react'
+import Logo from './Logo'
+import { Menu } from 'lucide-react'
 
 const MiniNavbar = () => {
   return (
-    <div className="relative">
-    <nav className="flex items-center justify-between bg-gray-800 py-4 px-6">
+    
+    <nav className="flex items-center justify-between py-4 px-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight">MySite</span>
+        <Logo />
       </div>
       <div className="hidden md:block">
+        <div className='  md:hidden '>
+          <Menu className=' w-5 h-5 text-white'/>
+        </div>
         <ul className="flex items-center space-x-4">
           <li className="relative group">
-            <a href="#" className="text-white hover:text-gray-300">Home</a>
+            <a href="#" className="text-white hover:text-gray-300 ">Home</a>
           </li>
           <li className="relative group">
             <a href="#" className="text-white hover:text-gray-300">About</a>
@@ -33,7 +38,7 @@ const MiniNavbar = () => {
         </ul>
       </div>
     </nav>
-  </div>
+
   
   )
 }
