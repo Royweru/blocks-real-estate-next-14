@@ -11,8 +11,8 @@ const MiniNavbar = () => {
         <Logo />
       </div>
       <div className="hidden md:block">
-        <div className='  md:hidden '>
-          <Menu className=' w-5 h-5 text-white'/>
+        <div className='md:hidden'>
+          <Menu className=' w-5 h-5 text-white mr-5'/>
         </div>
         <ul className="flex items-center space-x-4">
           <li className="relative group">
