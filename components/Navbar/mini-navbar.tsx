@@ -56,6 +56,7 @@ const MiniNavbar = () => {
               aria-controls="mobile-menu-3"
               aria-expanded="false"
             >
+              
               <span className="sr-only">Open main menu</span>
               <svg
                 className="w-6 h-6"
@@ -88,7 +89,7 @@ const MiniNavbar = () => {
               <li>
                 <a
                   href="/"
-                  className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded text-md font-bold"
+                  className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded  text-lg font-bold"
                   aria-current="page"
                 >
                   Home
@@ -97,7 +98,7 @@ const MiniNavbar = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-md font-bold"
+                  className="text-gray-700 hover:bg-gray-50 border-b text-lg border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-md font-bold"
                 >
                   About
                 </a>
@@ -105,7 +106,7 @@ const MiniNavbar = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-md font-bold"
+                  className="text-gray-700 hover:bg-gray-50 text-lg border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-md font-bold"
                 >
                   Services
                 </a>
@@ -121,7 +122,7 @@ const MiniNavbar = () => {
                     className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded"
                     aria-current="page"
                   >
-                    Home
+                    Sell
                   </a>
                 </li>
                 <li>
@@ -129,7 +130,7 @@ const MiniNavbar = () => {
                     href="#"
                     className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
                   >
-                    About
+                    Buy
                   </a>
                 </li>
                 <li>
@@ -137,7 +138,7 @@ const MiniNavbar = () => {
                     href="#"
                     className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
                   >
-                    Services
+                    Blog
                   </a>
                 </li>
               </ul>
