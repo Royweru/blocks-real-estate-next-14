@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Logo from './Logo'
+import Logo from './logo'
 import { Menu } from 'lucide-react'
 
 const MiniNavbar = () => {
@@ -19,7 +19,7 @@ const MiniNavbar = () => {
             <a href="#" className="text-white hover:text-gray-300 ">Home</a>
           </li>
           <li className="relative group">
-            <a href="#" className="text-white hover:text-gray-300">About</a>
+            <a href="#" className="text-white hover:text-gray-300 hover:underline">About</a>
             <div className="absolute hidden group-hover:block bg-gray-800 text-white py-2 rounded-md shadow-lg">
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">Our Story</a>
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">Team</a>
