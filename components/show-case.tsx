@@ -2,24 +2,7 @@ import { Home, LandPlot, SpaceIcon } from "lucide-react";
 import React from "react";
 import Heading from "./ui/heading";
 
-const divContent = [
-  {
-    Icon: Home,
-    id: 1,
-    description: "Be happy",
-  },
-  {
-    Icon: SpaceIcon,
-    id: 2,
 
-    description: "Get a place",
-  },
-  {
-    Icon: LandPlot,
-    id: 3,
-    description: "Feel comfortable",
-  },
-];
 const ShowCase = () => {
   return (
     <>
