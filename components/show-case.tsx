@@ -43,7 +43,7 @@ const ShowCase = () => {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className=" h-[500px] col-span-2   border-[2px]  border-transparent 
+            <div className=" h-[500px] col-span-2  border-[2px]  border-transparent 
             bg-slate-100 hover:outline-emerald-100 
             hover:cursor-pointer flex  justify-center rounded-md">
               <p className=" font-mono font-semibold text-sm text-neutral-600 leading-9 tracking-wide">
