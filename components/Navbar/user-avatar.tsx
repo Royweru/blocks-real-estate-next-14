@@ -1,29 +1,16 @@
-import Image from 'next/image'
-import React from 'react'
-import { UserButton, currentUser } from '@clerk/nextjs'
-import { Button } from '../ui/button'
-interface UserAvatarProps{
-    src?:string
+import Image from "next/image";
+import React from "react";
+import { UserButton } from "@clerk/nextjs";
+import { Button } from "../ui/button";
+interface UserAvatarProps {
+  src?: string;
 }
-const UserAvatar:React.FC<UserAvatarProps> = async({
-    src
-}) => {
-  const user = await currentUser()
- 
+const UserAvatar: React.FC<UserAvatarProps> = async ({ src }) => {
   return (
-    <div className=' flex justify-center items-center gap-x-4'>
-    <div className=' rounded-md flex justify-center items-center'>
-     <Button variant="destructive" className=' flex justify-center items-center rounded-md'>
-       Create 
-       Listing
-     </Button>
+    <div className="  flex justify-center items-center">
+      <UserButton afterSignOutUrl="/" />
     </div>
-    <div className='  flex justify-center items-center'>
-     <UserButton afterSignOutUrl='/'/>
-    </div>
-  </div>
+  );
+};
 
-  )
-}
-
-export default UserAvatar
+export default UserAvatar;

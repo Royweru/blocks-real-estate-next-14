@@ -1,16 +1,21 @@
-"use client";
 
+
+import { currentUser } from "@clerk/nextjs";
 import React, { useState, useCallback } from "react";
-import Logo from "./logo";
+import UserAvatar from "./user-avatar";
 
 
-const MiniNavbar = () => {
-  
 
-  
+const MiniNavbar =async () => {
+const user = await currentUser()
+  if(user){
+    return(
+      <UserAvatar />
+    )
+  }
   return (
-   <div className=" relative flex justify-center items-center">
-    
+   <div className=" relative flex justify-center items-center gap-x-4">
+       
    </div>
   );
 };
