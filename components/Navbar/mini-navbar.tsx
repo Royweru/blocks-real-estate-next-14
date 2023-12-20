@@ -1,6 +1,6 @@
 import { UserButton, currentUser } from "@clerk/nextjs";
 import React, { useState, useCallback } from "react";
-import UserAvatar from "./user-avatar";
+
 import { Button } from "../ui/button";
 import { PlusCircle } from "lucide-react";
 
