@@ -12,7 +12,7 @@ const MiniNavbar = () => {
   }, []);
   return (
     <nav className="border-gray-200 mb-10 relative">
-      <div className="w-full mx-auto gap-x-4 flex items-center h-full">
+      <div className="  mx-auto gap-x-4 flex items-center h-full">
         <div className="mx-2 flex  items-center justify-between">
           <a href="/" className="flex">
            <Logo />
@@ -57,12 +57,12 @@ const MiniNavbar = () => {
               </svg>
             </button>
           </div>
-          <div className="hidden md:flex justify-between items-end w-full md:w-auto md:order-1  ">
+          <div className="hidden md:flex justify-between items-end w-full md:w-auto  relative">
             <ul className="flex-col md:flex-row flex md:space-x-8 items-center justify-between mt-4 md:mt-0 md:text-sm md:font-medium">
               <li>
                 <a
                   href="/rent"
-                  className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded  text-lg font-bold"
+                  className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 rounded  text-lg font-bold"
                   aria-current="page"
                 >
               Rent

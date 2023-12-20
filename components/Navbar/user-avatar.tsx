@@ -11,7 +11,7 @@ const UserAvatar:React.FC<UserAvatarProps> = async({
   const user = await currentUser()
  
   return (
-    <>
+    <div className=' flex justify-center items-center gap-x-4'>
     <div className=' rounded-md flex justify-center items-center'>
      <Button variant="destructive" className=' flex justify-center items-center rounded-md'>
        Create 
@@ -21,7 +21,7 @@ const UserAvatar:React.FC<UserAvatarProps> = async({
     <div className='  flex justify-center items-center'>
      <UserButton afterSignOutUrl='/'/>
     </div>
-  </>
+  </div>
 
   )
 }
