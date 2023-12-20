@@ -7,12 +7,12 @@ import ContentBox from "@/components/content-box";
 import ShowCase from "@/components/show-case";
 import Listings from "@/components/listings";
 import MiniListing from "@/components/listings/mini-listing";
+import BlogsSection from "@/components/blogs-section";
 import Footer from "@/components/footer";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-y-4 justify-evenly items-center w-full ">
       <Billboard>
-        <Navbar/>
         <SearchBar />
       </Billboard>
       <div className=" bg-white w-full rounded  flex flex-col justify-evenly items-center  py-3">
@@ -22,6 +22,7 @@ export default function Home() {
       <ShowCase />
       <Listings />
       <MiniListing />
+      <BlogsSection />
       <Footer />
     </main>
   );
