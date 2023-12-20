@@ -13,7 +13,7 @@ const MiniNavbar = () => {
   return (
     <nav className="border-gray-200 mb-10 relative">
       <div className="w-full mx-auto gap-x-4 flex items-center h-full">
-        <div className="mx-2 flex flex-wrap items-center justify-between">
+        <div className="mx-2 flex  items-center justify-between">
           <a href="/" className="flex">
            <Logo />
             <span className="self-center text-lg font-semibold whitespace-nowrap">
@@ -61,7 +61,7 @@ const MiniNavbar = () => {
             <ul className="flex-col md:flex-row flex md:space-x-8 items-center justify-between mt-4 md:mt-0 md:text-sm md:font-medium">
               <li>
                 <a
-                  href="#"
+                  href="/rent"
                   className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded  text-lg font-bold"
                   aria-current="page"
                 >
@@ -78,7 +78,7 @@ const MiniNavbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/blog"
                   className="text-gray-700 hover:bg-gray-50 text-lg border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-md font-bold"
                 >
                    Blog
