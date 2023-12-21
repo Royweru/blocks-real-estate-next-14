@@ -9,7 +9,7 @@ export const Navbar = () => {
     setIsOpen((value) => !value);
   }, []);
   return (
-    <nav className="border-gray-200 mb-5 flex justify-center items-center bg-slate-400 w-full h-[100px] rounded">
+    <nav className="border-gray-200 mb-3 flex justify-center items-center bg-slate-400 w-full h-[100px] rounded">
     <div className="mx-auto gap-x-4 flex items-center h-full w-2/3">
       <div className="mx-2 flex items-center justify-between w-full">
         <a href="/" className="flex items-center">

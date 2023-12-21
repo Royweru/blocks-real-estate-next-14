@@ -18,7 +18,7 @@ const MiniNavbar = async () => {
           </div>
           <PlusCircle className=" w-5 h-5" />
         </Button>
-       <UserButton afterSignOutUrl=""/>
+       <UserButton afterSignOutUrl="/" showName />
       </div>
     );
   }
