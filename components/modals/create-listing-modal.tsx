@@ -9,7 +9,7 @@ export const CreateListingModal = () => {
   return ( 
     <Modal
       isOpen={isOpen}
-      onChange={onClose}
+       onChange={onClose}
       title='Hey there ,this is the first step to creating your own listing'
       description=' We are more than glad that oyu decided to be part of our esteemed team. We will take you through a llist of steps needed to succed in your steps to becoming an owner and shareholder in the this great team'
     >
