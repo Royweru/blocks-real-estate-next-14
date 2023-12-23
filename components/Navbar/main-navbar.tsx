@@ -3,11 +3,13 @@ import React ,{useState,useCallback} from "react";
 import Logo from "./logo";
 import MiniNavbar from "./mini-navbar";
 import { Menu } from "lucide-react";
+import useCreateListingModal from "@/hooks/use-create-listing-modal";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
+  const {onOpen} = useCreateListingModal()
   return (
     <nav className="border-gray-200 mb-3 flex justify-center items-center bg-slate-400 w-full h-[100px] rounded">
     <div className="mx-auto gap-x-4 flex items-center h-full w-2/3">
@@ -57,6 +59,17 @@ export const Navbar = () => {
               >
                 Blog
               </a>
+            </li>
+            <li>
+              <div
+               onClick={onOpen}
+              className="text-gray-700 hover:bg-gray-50 
+              text-lg border-b border-gray-100 md:hover:bg-transparent 
+              md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 
+              md:p-0 text-md font-bold hover:cursor-pointer"
+              >
+                New
+              </div>
             </li>
           </ul>
         </div>

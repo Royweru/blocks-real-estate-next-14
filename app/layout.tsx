@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar/main-navbar";
 import ModalProvider from "@/components/providers/modal-provider";
+import { CreateListingModal } from "@/components/modals/create-listing-modal";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          <ModalProvider />
+         <CreateListingModal />
           <Navbar />
           <div className=" w-full h-full">{children}</div>
         </body>

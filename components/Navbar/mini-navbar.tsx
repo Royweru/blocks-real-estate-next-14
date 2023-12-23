@@ -4,7 +4,6 @@ import React, { useState, useCallback } from "react";
 
 import { Button } from "../ui/button";
 
-import { CreateButton } from "../create-button";
 
 const MiniNavbar = async () => {
   const user = await currentUser();
@@ -12,7 +11,7 @@ const MiniNavbar = async () => {
   if (user) {
     return (
       <div className=" flex justify-center items-center w-full relative gap-x-5 ">
-       <CreateButton />
+       
        <UserButton afterSignOutUrl="/" showName />
       </div>
     );
