@@ -24,7 +24,9 @@ const MiniNavbar = async () => {
      </a>
    </Button>
    <Button variant="outline">
-     Sign up
+     <a href="/sign-up">
+      Sign Up
+     </a>
    </Button>
     </div>
   );
