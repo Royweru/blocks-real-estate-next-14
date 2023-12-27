@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, currentUser } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar/main-navbar";
@@ -12,17 +12,19 @@ export const metadata: Metadata = {
   description: "Get a place you can call your home",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  
+  const user = await currentUser()
   return (
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-         <CreateListingModal />
-          <Navbar />
+         <ModalProvider />
+          <Navbar user={user} />
           <div className=" w-full h-full">{children}</div>
         </body>
       </html>

@@ -1,18 +1,23 @@
 import { UserButton, currentUser } from "@clerk/nextjs";
-import React, { useState, useCallback } from "react";
+import React from "react";
 
 
 import { Button } from "../ui/button";
+interface MiniNavbarProps{
+  user:any
+}
 
-
-const MiniNavbar = async () => {
-  const user = await currentUser();
-  
+const MiniNavbar:React.FC<MiniNavbarProps> = ({
+  user
+}) => {
+ 
   if (user) {
     return (
       <div className=" flex justify-center items-center w-full relative gap-x-5 ">
-       
-       <UserButton afterSignOutUrl="/" showName />
+       <div>
+        Logged in
+       </div>
+       <UserButton afterSignOutUrl="/" />
       </div>
     );
   }
