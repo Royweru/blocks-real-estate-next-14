@@ -24,7 +24,7 @@ export default async function RootLayout({
       <html lang="en">
         <body className={inter.className}>
          <ModalProvider />
-          <Navbar user={user} />
+          <Navbar  />
           <div className=" w-full h-full">{children}</div>
         </body>
       </html>

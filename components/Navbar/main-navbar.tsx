@@ -5,13 +5,9 @@ import MiniNavbar from "./mini-navbar";
 import { Menu } from "lucide-react";
 import useCreateListingModal from "@/hooks/use-create-listing-modal";
 
-interface NavbarProps{
-  user:any
-}
 
-export const Navbar:React.FC<NavbarProps> = ({
-  user
-}) => {
+
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
@@ -114,7 +110,7 @@ export const Navbar:React.FC<NavbarProps> = ({
       </div>
     </div>
     <div className=" w-1/3 flex justify-center items-center">
-       <MiniNavbar user={user}/>
+       <MiniNavbar />
     </div>
   </nav>
   
